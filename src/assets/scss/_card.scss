@@ -1,0 +1,9 @@
+@use "@/assets/scss/variables" as *;
+
+.card {
+  min-height: 27rem;
+  background-color: $bg-tertiary;
+  border-radius: .625rem;
+  white-space: pre-line;
+  overflow: hidden;
+}

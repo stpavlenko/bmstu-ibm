@@ -1,0 +1,59 @@
+@use './variables' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "ALS Sector", sans-serif;
+  background-color: $bg-primary;
+}
+
+.wrapper {
+  max-width: calc(1300px + 8.75rem);
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 4.375rem;
+}
+
+.app {
+  &__section {
+    margin-top: 4rem;
+  }
+
+  &__logo {
+    width: 19.5rem;
+    height: 4.375rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: space-between;
+    row-gap: 2.8rem;
+  }
+
+  &__section-title {
+    font-size: 3rem;
+  }
+
+  &__section-body {
+    margin-top: 2rem;
+  }
+
+  &__arrow-container {
+    min-width: 2rem;
+
+    &:hover .app__arrow {
+      transform: translateX(0);
+    }
+  }
+
+  &__arrow {
+    transition: $transition-duration;
+    transform: translateX(-0.875rem);
+    float: right;
+  }
+}
