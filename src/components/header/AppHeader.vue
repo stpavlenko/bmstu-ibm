@@ -5,13 +5,23 @@ const dropdowns = [
   {
     title: "О факультете",
     items: ["О нас", "Руководство"],
-  }, {
+  },
+  {
     title: "Поступающим",
-    items: ["Проходные баллы", "Бакалавриат", "Магистратура", "Аспирантура", "Дополнительное образование", "Для школьников"],
-  }, {
+    items: [
+      "Проходные баллы",
+      "Бакалавриат",
+      "Магистратура",
+      "Аспирантура",
+      "Дополнительное образование",
+      "Для школьников",
+    ],
+  },
+  {
     title: "Обучающимся",
     items: ["Личный кабинет", "Студcовет", "Профком", "Научное общество"],
-  }, {
+  },
+  {
     title: "Наука",
     items: ["Конкурсы", "Рейтинг", "Публикации", "Научные проекты"],
   },
@@ -22,7 +32,7 @@ const dropdowns = [
   <header class="header">
     <div class="wrapper header__wrapper">
       <a href="/">
-        <img src="@/assets/img/logo.svg" alt="Логотип университета" class="app__logo">
+        <img src="@/assets/img/logo.svg" alt="Логотип университета" class="app__logo" />
       </a>
 
       <nav class="header__nav">
@@ -37,7 +47,7 @@ const dropdowns = [
 </template>
 
 <style scoped lang="scss">
-@use '@/assets/scss/variables' as *;
+@use "@/assets/scss/variables" as *;
 
 .header {
   display: flex;

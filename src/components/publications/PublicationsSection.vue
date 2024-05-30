@@ -8,8 +8,12 @@ import { publications } from "@/assets/mock/index.js";
     <div class="wrapper">
       <h2 class="app__section-title">Публикации</h2>
 
-      <publications-item v-for="publication in publications" :key="publication.id" :publication
-                         class="app__section-body" />
+      <publications-item
+        v-for="publication in publications"
+        :key="publication.id"
+        :publication
+        class="app__section-body"
+      />
     </div>
   </section>
 </template>

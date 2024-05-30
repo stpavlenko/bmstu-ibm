@@ -4,18 +4,18 @@ defineProps({ manager: Object });
 
 <template>
   <div class="card manager-card">
-    <img :src="manager.img" :alt="manager.name" class="manager-card__img">
+    <img :src="manager.img" :alt="manager.name" class="manager-card__img" />
 
     <div class="manager-card__text">
       <p v-text="manager.name" class="manager-card__name"></p>
 
       <p v-text="manager.position" class="manager-card__position"></p>
 
-      <p class="manager-card__contacts">
+      <div class="manager-card__contacts">
         <p>Телефон: <a v-text="manager.phone" :href="`tel:${manager.phone}`"></a></p>
 
         <p>E-mail: <a v-text="manager.email" :href="`mailto:${manager.email}`"></a></p>
-      </p>
+      </div>
     </div>
   </div>
 </template>
@@ -39,7 +39,7 @@ defineProps({ manager: Object });
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    padding: .875rem;
+    padding: 0.875rem;
   }
 
   &__name {
@@ -47,7 +47,8 @@ defineProps({ manager: Object });
     min-height: 2em;
   }
 
-  &__name, &__position {
+  &__name,
+  &__position {
     text-align: center;
   }
 

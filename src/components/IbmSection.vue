@@ -1,11 +1,9 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <section class="ibm">
     <div class="wrapper ibm__wrapper">
-      <img src="@/assets/img/logo-ibm.png" alt="Лого “Инженерный бизнес и менеджмент”" class="ibm__logo">
+      <img src="@/assets/img/logo-ibm.png" alt="Лого “Инженерный бизнес и менеджмент”" class="ibm__logo" />
 
       <h1 class="ibm__title">Факультет “Инженерный бизнес и менеджмент”</h1>
     </div>

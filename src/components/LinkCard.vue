@@ -28,7 +28,7 @@ defineProps({
 @use "@/assets/scss/card";
 
 .link-card {
-  padding: .625rem;
+  padding: 0.625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -50,7 +50,7 @@ defineProps({
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 }
 </style>

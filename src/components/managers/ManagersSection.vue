@@ -15,6 +15,4 @@ import { managers } from "@/assets/mock/index.js";
   </section>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

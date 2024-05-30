@@ -9,8 +9,12 @@ import LinkCard from "@/components/LinkCard.vue";
       <h2 class="app__section-title">Направления подготовки</h2>
 
       <div class="app__cards app__section-body">
-        <link-card v-for="direction in directions" :key="direction.name" :title="direction.title"
-                   :text="direction.text" />
+        <link-card
+          v-for="direction in directions"
+          :key="direction.name"
+          :title="direction.title"
+          :text="direction.text"
+        />
       </div>
     </div>
   </section>

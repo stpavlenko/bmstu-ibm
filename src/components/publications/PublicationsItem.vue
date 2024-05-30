@@ -18,22 +18,20 @@ defineProps({
       <div class="publication__body">
         <p v-text="publication.title"></p>
 
-        <br>
+        <br />
 
         <p v-text="publication.text"></p>
       </div>
 
-      <div class="app__arrow-container">
+      <a href="/#" class="app__arrow-container publication__arrow-container">
         <app-arrow />
-      </div>
+      </a>
     </div>
-
-
   </div>
 </template>
 
 <style scoped lang="scss">
-@use '@/assets/scss/variables' as *;
+@use "@/assets/scss/variables" as *;
 
 .publication {
   display: flex;
@@ -55,19 +53,28 @@ defineProps({
     color: $color-primary;
   }
 
-  &__class, &__authors {
+  &__class,
+  &__authors {
     font-size: 1.25rem;
   }
 
   &__right {
     display: flex;
-    align-items: center;
-    gap: 4rem;
+    align-items: stretch;
+    //gap: 4rem;
   }
 
   &__body {
     font-size: 0.9375rem;
     max-width: 40rem;
+  }
+
+  &__arrow-container {
+    //max-width: 7rem;
+    flex: 1 0 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 }
 </style>
