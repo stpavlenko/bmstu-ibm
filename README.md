@@ -2,6 +2,12 @@
 
 ## open local
 
+install
+node js
+git
+
+clone repo
+
 ```
 npm install
 npm run dev
