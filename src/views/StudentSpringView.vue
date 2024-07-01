@@ -27,7 +27,7 @@ const springs = [
     title: "Студенческая научная весна 2017",
     href: "/student-spring/#",
   }, {
-    title: "Студенческая научная весна 2026",
+    title: "Студенческая научная весна 2016",
     href: "/student-spring/#",
   },
 ];

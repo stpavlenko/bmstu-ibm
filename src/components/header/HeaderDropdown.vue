@@ -1,8 +1,22 @@
 <script setup>
+import { useRouter } from "vue-router";
+import { nextTick } from "vue";
+
 defineProps({
   title: String,
   items: Array,
 });
+
+const router = useRouter();
+
+const handleClick = async (item) => {
+  if (item.isAnchor) {
+    await router.push(item.route);
+    await nextTick();
+    const el = document.querySelector(item.route.slice(1));
+    el.scrollIntoView({ behavior: "smooth" });
+  } else if (item.isInternal) await router.push(item.route);
+};
 </script>
 
 <template>
@@ -10,9 +24,10 @@ defineProps({
     <button v-text="title" class="dropdown__btn"></button>
 
     <ul class="dropdown__list">
-      <li v-for="item in items" :key="item">
-        <router-link v-if="item.isInternal" :to="item.route">{{ item.title }}</router-link>
-        <a v-else :href="item.route" v-text="item.title"></a>
+      <li v-for="item in items" :key="item" class="item">
+        <button v-if="item.isInternal || item.isAnchor" :to="item.route" @click="handleClick(item)">{{ item.title }}
+        </button>
+        <a v-else :href="item.route">{{ item.title }}</a>
       </li>
     </ul>
   </div>
@@ -51,6 +66,10 @@ defineProps({
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+
+    button {
+      text-align: left;
+    }
 
     a {
       text-decoration: none;
