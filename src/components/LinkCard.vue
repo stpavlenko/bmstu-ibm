@@ -8,15 +8,15 @@ defineProps({
 </script>
 
 <template>
-  <div class="card link-card">
+  <div class="home-card link-card">
     <div>
-      <span v-text="title" class="link-card__title"></span>
+      <span v-text="title" class="home-card__title"></span>
 
       <p v-text="text" class="link-card__text"></p>
     </div>
 
     <a href="/#" class="link-card__link app__arrow-container">
-      Читать больше
+      Сайт кафедры
 
       <app-arrow />
     </a>
@@ -32,13 +32,6 @@ defineProps({
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  &__title {
-    font-size: 1.5rem;
-    color: $color-secondary;
-    display: block;
-    min-height: 7rem;
-  }
 
   &__text {
     color: $color-tertiary;

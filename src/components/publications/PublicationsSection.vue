@@ -4,7 +4,7 @@ import { publications } from "@/assets/mock/index.js";
 </script>
 
 <template>
-  <section class="app__section">
+  <section class="app__section" id="publications">
     <div class="wrapper">
       <h2 class="app__section-title">Публикации</h2>
 

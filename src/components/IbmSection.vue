@@ -24,8 +24,9 @@
   }
 
   &__logo {
-    width: 10rem;
-    height: 10rem;
+    object-fit: contain;
+    width: 11.625rem;
+    height: 10.875rem;
   }
 
   &__title {

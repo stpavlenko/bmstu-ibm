@@ -5,7 +5,7 @@ $bg-4: #57A1EF;
 
 $color-primary: #006CDC;
 $color-secondary: #002C5B;
-$color-tertiary: #A2A2A2;
+$color-tertiary: #515151;
 $color-4: #004A69;
 $color-5: #C1C1C1;
 $color-white: #FFF;
@@ -21,6 +21,7 @@ $transition-duration: 0.4s;
   gap: 4.375rem;
   padding-top: 3rem;
   padding-bottom: 5.3rem;
+  padding-inline: 3.5rem;
 
   &__body {
     max-width: 38rem;

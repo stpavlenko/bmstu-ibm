@@ -11,7 +11,8 @@ defineProps({
 
     <ul class="dropdown__list">
       <li v-for="item in items" :key="item">
-        <a href="/#" v-text="item"></a>
+        <router-link v-if="item.isInternal" :to="item.route">{{ item.title }}</router-link>
+        <a v-else :href="item.route" v-text="item.title"></a>
       </li>
     </ul>
   </div>

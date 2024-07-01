@@ -3,7 +3,7 @@ defineProps({ manager: Object });
 </script>
 
 <template>
-  <div class="card manager-card">
+  <div class="home-card manager-card">
     <img :src="manager.img" :alt="manager.name" class="manager-card__img" />
 
     <div class="manager-card__text">

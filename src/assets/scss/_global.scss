@@ -11,11 +11,39 @@ body {
   background-color: $bg-primary;
 }
 
+button, a {
+  border: none;
+  background-color: transparent;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.fs-15 {
+  font-size: 1.5rem;
+}
+
 .wrapper {
   max-width: calc(1300px + 8.75rem);
   width: 100%;
   margin-inline: auto;
   padding-inline: 4.375rem;
+}
+
+.text-blue {
+  color: $color-primary;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 .app {
@@ -37,6 +65,14 @@ body {
 
   &__section-title {
     font-size: 3rem;
+  }
+
+  &__section-small-title {
+    font-size: 2.5rem;
+  }
+
+  &__section-p {
+    font-size: 1.5rem;
   }
 
   &__section-body {

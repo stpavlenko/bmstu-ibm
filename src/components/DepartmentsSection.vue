@@ -4,7 +4,7 @@ import LinkCard from "@/components/LinkCard.vue";
 </script>
 
 <template>
-  <section class="departments app__section">
+  <section class="departments app__section" id="departments">
     <div class="wrapper">
       <h2 class="app__section-title">Кафедры</h2>
 

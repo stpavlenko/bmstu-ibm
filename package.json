@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "prettier": "^3.2.5",
+    "primevue": "^4.0.0-rc.2",
     "swiper": "^11.1.4",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.4.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",

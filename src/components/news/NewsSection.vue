@@ -1,6 +1,6 @@
 <script setup>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 import { newsItems } from "@/assets/mock/index.js";
 import NewsItem from "@/components/news/NewsItem.vue";
 </script>
@@ -9,13 +9,15 @@ import NewsItem from "@/components/news/NewsItem.vue";
   <section class="news">
     <div class="wrapper">
       <swiper
-        :modules=[Pagination]
+        :modules="[Pagination, Navigation]"
         :space-between="140"
         :pagination="{ clickable: true }"
         :loop="true"
+        navigation
         :style="{
           '--swiper-pagination-bullet-size': '16px',
           '--swiper-pagination-color': '#1358BE',
+          '--swiper-navigation-color': '#fff',
         }"
       >
         <swiper-slide v-for="news in newsItems" :key="news.title">

@@ -13,7 +13,7 @@ defineProps({
     </div>
 
     <div class="item__img-container">
-      <img :src="item.img" alt="">
+      <img :src="item.img" alt="" />
     </div>
   </div>
 </template>
