@@ -4,6 +4,7 @@ import AppArrow from "@/components/UI/AppArrow.vue";
 defineProps({
   title: String,
   text: String,
+  link: String,
 });
 </script>
 
@@ -15,7 +16,7 @@ defineProps({
       <p v-text="text" class="link-card__text"></p>
     </div>
 
-    <a href="/#" class="link-card__link app__arrow-container">
+    <a :href="link" class="link-card__link app__arrow-container">
       Сайт кафедры
 
       <app-arrow />

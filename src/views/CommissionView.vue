@@ -50,7 +50,7 @@ import AppCard from "@/components/UI/AppCard.vue";
         Подробнее о правилах приема на обучение по программам бакалавриата и документах, необходимых для поступления, вы
         можете узнать <a href="https://bmstu.ru/documents" class="text-blue">здесь.</a> <br>
         Минимально необходимые для поступления значения баллов можно посмотреть
-        <a href="/#directions" class="text-blue">здесь.</a>
+        <router-link to="/#directions" class="text-blue">здесь.</router-link>
         <br>
         План приема на обучение по программам бакалавриата в 2024 году можно посмотреть <a
         href="https://api.www.bmstu.ru/file/100675/download" class="text-blue">здесь.</a> <br> <br>
@@ -103,8 +103,11 @@ import AppCard from "@/components/UI/AppCard.vue";
 
       <h3 class="app__section-small-title text-blue text-uppercase">Правила приёма в аспирантуру</h3>
 
-      <p class="app__section-p">Подробнее о поступлении в аспирантуру можно узнать <a
-        href="http://ibm.bmstu.ru/?page_id=1020" class="text-blue">здесь</a></p>
+      <p class="app__section-p">Подробнее о поступлении в аспирантуру можно узнать
+        <router-link
+          to="/postgraduate" class="text-blue">здесь
+        </router-link>
+      </p>
 
       <app-card class="contacts">
         <h3 class="app__section-small-title text-blue text-uppercase">КОНТАКТЫ ПРИЕМНОЙ КОМИССИИ</h3>

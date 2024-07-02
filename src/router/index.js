@@ -1,4 +1,5 @@
 import { createMemoryHistory, createRouter, createWebHistory } from "vue-router";
+import { nextTick } from "vue";
 
 const routes = [
   { path: "/", component: () => import("@/views/HomeView.vue") },
@@ -17,6 +18,15 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  
+  scrollBehavior: async (to, from, savedPosition) => {
+    if (to.hash) return {
+      el: to.hash,
+      behavior: "smooth",
+    };
+
+    return { top: 0 };
+  },
 });
 
 export default router;

@@ -6,26 +6,26 @@ const dropdowns = [
     title: "О факультете",
     items: [
       { title: "О нас", route: "/about", isInternal: true },
-      { title: "Руководство", route: "/#managers", isAnchor: true },
-      { title: "Кафедры", route: "/#departments", isAnchor: true },
-      { title: "Направления подготовки", route: "/#directions", isAnchor: true },
+      { title: "Руководство", route: "/#managers", isInternal: true },
+      { title: "Кафедры", route: "/#departments", isInternal: true },
+      { title: "Направления подготовки", route: "/#directions", isInternal: true },
     ],
   },
   {
     title: "Поступающим",
     items: [
       { title: "Приемная комиссия", route: "/commission", isInternal: true },
-      { title: "Бакалавриат", route: "/#directions", isAnchor: true },
-      { title: "Магистратура", route: "/#directions", isAnchor: true },
-      { title: "Аспирантура", route: "/#directions", isAnchor: true },
-      { title: "Дополнительное образование", route: "/#directions", isAnchor: true },
-      { title: "Для школьников", route: "/#", isInternal: true },
+      { title: "Бакалавриат", route: "/#directions", isInternal: true },
+      { title: "Магистратура", route: "/#directions", isInternal: true },
+      { title: "Аспирантура", route: "/#directions", isInternal: true },
+      { title: "Дополнительное образование", route: "/#directions", isInternal: true },
+      { title: "Для школьников", route: "https://olymp.bmstu.ru/ru" },
     ],
   },
   {
     title: "Обучающимся",
     items: [
-      { title: "Личный кабинет", route: "/#", isInternal: true },
+      { title: "Личный кабинет", route: "https://lks.bmstu.ru/" },
       { title: "Студcовет", route: "/#", isInternal: true },
       { title: "Профком", route: "/#", isInternal: true },
       { title: "Научное общество", route: "/scientific-society", isInternal: true },
@@ -36,7 +36,7 @@ const dropdowns = [
     items: [
       { title: "Конференции", route: "/conferences", isInternal: true },
       { title: "Научная деятельность", route: "/scientific-activity", isInternal: true },
-      { title: "Публикации", route: "/#publications", isAnchor: true },
+      { title: "Публикации", route: "/#publications", isInternal: true },
     ],
   },
 ];
